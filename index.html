@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220524140208">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220525215359">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -14,7 +14,7 @@
 		<header class="header">
 			<div class="header__top">
 				<div class="header__container">
-					<a href="#" class="header__loc">
+					<a href="#" class="header__loc" data-popup="#citiesModal">
 						<i class="_icon-marker"></i>
 						<span>Москва</span>
 					</a>
@@ -73,7 +73,7 @@
 						</a>
 					</div>
 					<div class="header__button-block">
-						<a href="#" class="header__red-btn red-btn">
+						<a href="#" class="header__red-btn red-btn" data-popup="#callback">
 							Обратный звонок
 						</a>
 						<div class="header__btn-time _icon-clock">с 9:00 - 18:00</div>
@@ -85,11 +85,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="side col-lg-3">
-						<div class="side__menu">
-							<a class="side__title _icon-menu" data-bs-toggle="collapse" href="#slideMenu" role="button" aria-expanded="true" aria-controls="slideMenu">
+						<div class="side__menu" data-spollers>
+							<a class="side__title side-spoiler-link _icon-menu" data-spoller href="#">
 								<span>Каталог товаров</span>
 							</a>
-							<div class="collapse side__collapse" id="slideMenu">
+							<div class="side__collapse">
 								<nav class="side__nav">
 									<ul class="side__main-ul">
 										<li class="side__main-li"><a href="#" class="_icon-arrow-r"><span>Бахилы</span></a></li>
@@ -570,17 +570,294 @@
 									</div>
 								</div>
 							</div>
+							<div class="info">
+								<div class="info__block">
+									<div class="info__title title">Интернет-магазин спецодежды «Одеждапроф»</div>
+									<div class="info__text">
+										<p>Предлагаем вам каталог спецодежды для любых сфер применения: медицинские предприятия,
+											лёгкая и тяжёлая промышленность,
+											розничная коммерция, пищевое производство. В нашем каталоге вы сможете найти не только
+											специализированную одежду, но и
+											средства индивидуальной защиты (СИЗ) и спецобувь. У нас представлены товары как
+											российских, так и зарубежных
+											производителей. Мы тщательно проверяем каждого поставщика на качество его продукции и
+											соответствие необходимым
+											стандартам.</p>
+										<p>
+											Вы можете оформить заказ онлайн в любое время, указав минимальное количество товара.
+										</p>
+										<p>Заказы по звонку принимаем в рабочие дни, с 9:00 до 18:00, в офисе вашего города.
+											Менеджеры подскажут вам по наличию
+											товара, его характеристикам, и помогут оформить заказ.</p>
+									</div>
+								</div>
+								<div class="info__block">
+									<div class="info__title title">Наша компания</div>
+									<div class="info__text info__text-img">
+										<p>Компания имеет 10 летний опыт оптовых продаж в различных сферах. У нас налажено
+											собственное производство. Наша команда
+											профессиональных маркетологов следит за актуальностью товаров в представленном
+											каталоге. Мы выстроили систему отношений
+											с постоянными клиентами и процесс логистики до совершенства. У нас большие складские
+											запасы товаров, которые мы держим
+											под постоянных клиентов.</p>
+										<div class="info__img">
+											<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture>
+										</div>
+									</div>
+									<a href="#" class="info__link">Мы держим складские запасы под постоянных клиентов </a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+		<div id="citiesModal" aria-hidden="true" class="popup modal-cities">
+			<div class="popup__wrapper modal-cities__wrapper">
+				<div class="popup__content modal-cities__content">
+					<button data-close type="button" class="modal-cities__close _icon-cross"></button>
+					<div class="modal-cities__text">
+						<div class="modal-cities__main">
+							<a href="tel:88512442580" class="modal-cities__link">
+								<span>8 (851) 244-25-80</span>
+								<span>Астрахань</span>
+							</a>
+							<a href="tel:83852556436" class="modal-cities__link">
+								<span>8 (385) 255-64-36</span>
+								<span>Барнаул</span>
+							</a>
+							<a href="tel:84832770259" class="modal-cities__link">
+								<span>8 (4832) 770-259</span>
+								<span>Брянск</span>
+							</a>
+							<a href="tel:88442968736" class="modal-cities__link">
+								<span>8 (844) 296-8736</span>
+								<span>Волгоград</span>
+							</a>
+							<a href="tel:84732106454" class="modal-cities__link">
+								<span>8 (473) 210-64-54</span>
+								<span>Воронеж</span>
+							</a>
+							<a href="tel:83952436740" class="modal-cities__link">
+								<span>8 (395) 243-6740</span>
+								<span>Иркутск</span>
+							</a>
+							<a href="tel:88435282720" class="modal-cities__link">
+								<span>8 (843) 528-27-20</span>
+								<span>Казань</span>
+							</a>
+							<a href="tel:83842780832" class="modal-cities__link">
+								<span>8 (384) 278-08-32</span>
+								<span>Кемерово</span>
+							</a>
+							<a href="tel:84986819830" class="modal-cities__link">
+								<span>8 (498) 681-9830</span>
+								<span>Королев</span>
+							</a>
+							<a href="tel:88619914370" class="modal-cities__link">
+								<span>8 (861) 991-43-70</span>
+								<span>Краснодар</span>
+							</a>
+							<a href="tel:83912347031" class="modal-cities__link">
+								<span>8 (391) 234-70-31</span>
+								<span>Красноярск</span>
+							</a>
+							<a href="tel:84712540652" class="modal-cities__link">
+								<span>8 (4712) 540-652</span>
+								<span>Курск</span>
+							</a>
+							<a href="tel:84742370224" class="modal-cities__link">
+								<span>8 (4742) 370-224</span>
+								<span>Липецк</span>
+							</a>
+							<a href="tel:84986815810" class="modal-cities__link">
+								<span>8 (498) 681-5810</span>
+								<span>Люберцы</span>
+							</a>
+							<a href="tel:84986829027" class="modal-cities__link">
+								<span>8 (498) 682-9027</span>
+								<span>Мытищи</span>
+							</a>
+							<a href="tel:83843328657" class="modal-cities__link">
+								<span>8 (384) 332-86-57</span>
+								<span>Новокузнецк</span>
+							</a>
+							<a href="tel:83833049546" class="modal-cities__link">
+								<span>8 (383) 304-9546</span>
+								<span>Новосибирск</span>
+							</a>
+							<a href="tel:83843328657" class="modal-cities__link">
+								<span>8 (384) 332-86-57</span>
+								<span>Новокузнецк</span>
+							</a>
+							<a href="tel:88632850699" class="modal-cities__link">
+								<span>8 (863) 285-06-99</span>
+								<span>Ростов-на-Дону</span>
+							</a>
+							<a href="tel:84912559921" class="modal-cities__link">
+								<span>8 (4912) 559-921</span>
+								<span>Рязань</span>
+							</a>
+							<a href="tel:83812790119" class="modal-cities__link">
+								<span>8 (381) 279-0119</span>
+								<span>Омск</span>
+							</a>
+							<a href="tel:88452694250" class="modal-cities__link">
+								<span>8 (8452) 694-250</span>
+								<span>Саратов</span>
+							</a>
+							<a href="tel:88692222130" class="modal-cities__link">
+								<span>8 (8692) 22-2130</span>
+								<span>Севастополь</span>
+							</a>
+							<a href="tel:88469578370" class="modal-cities__link">
+								<span>8 (846) 957-83-70</span>
+								<span>Самара</span>
+							</a>
+							<a href="tel:88652257393" class="modal-cities__link">
+								<span>8 (8652) 257-393</span>
+								<span>Ставрополь</span>
+							</a>
+							<a href="tel:83822609452" class="modal-cities__link">
+								<span>8 (382) 260-94-52</span>
+								<span>Томск</span>
+							</a>
+							<a href="tel:88624440681" class="modal-cities__link">
+								<span>8 (862) 444-06-81</span>
+								<span>Сочи</span>
+							</a>
+							<a href="tel:83512149868" class="modal-cities__link">
+								<span>8 (351) 214-98-68</span>
+								<span>Челябинск</span>
+							</a>
+							<a href="tel:83472249256" class="modal-cities__link">
+								<span>8 (347) 224-92-56</span>
+								<span>Уфа</span>
+							</a>
+							<a href="tel:84872770439" class="modal-cities__link">
+								<span>8 (4872) 770-439</span>
+								<span>Тула</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="callback" aria-hidden="true" class="popup callback">
+			<div class="popup__wrapper callback__wrapper">
+				<div class="popup__content callback__content">
+					<button data-close type="button" class="callback__close _icon-cross"></button>
+					<div class="callback__text">
+						<div class="callback__title">
+							Форма обратной связи
+						</div>
+						<form action="#" class="callback__form">
+							<div class="callback__form-block">
+								<select class="callback__select" data-scroll>
+									<option value="" selected>Ближайший филиал</option>
+									<option value="Москва">Москва</option>
+									<option value="СПБ">СПБ</option>
+									<option value="Волгоград">Волгоград</option>
+									<option value="Москва">Москва</option>
+									<option value="СПБ">СПБ</option>
+									<option value="Волгоград">Волгоград</option>
+									<option value="Москва">Москва</option>
+									<option value="СПБ">СПБ</option>
+									<option value="Волгоград">Волгоград</option>
+									<option value="Москва">Москва</option>
+									<option value="СПБ">СПБ</option>
+									<option value="Волгоград">Волгоград</option>
+									<option value="Москва">Москва</option>
+									<option value="СПБ">СПБ</option>
+									<option value="Волгоград">Волгоград</option>
+								</select>
+								<div class="callback__check"></div>
+							</div>
+							<div class="callback__form-block">
+								<input autocomplete="off" type="text" required data-validate data-error="Введите ФИО" placeholder="ФИО" class="callback__input">
+								<div class="callback__check"></div>
+							</div>
+							<div class="callback__form-block">
+								<input autocomplete="off" type="tel" data-placeholder-nohide data-validate data-required data-error="Минимум 11 символов" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" value="+7(___)___-__-__" placeholder="+7(___)___-__-__" class="callback__input callback__phone">
+								<div class="callback__check"></div>
+							</div>
+							<div class="callback__form-text">
+								<p>Предоставив свои данные, Вы соглашаетесь <br> с <a href="#">Политикой конфиденциальности</a></p>
+							</div>
+							<button type="submit" class="callback__btn blue-btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__block">
+					<div class="footer__title">Покупателям</div>
+					<ul class="footer__ul">
+						<li class="footer__li"><a href="#">Оплата</a></li>
+						<li class="footer__li"><a href="#">Доставка</a></li>
+						<li class="footer__li"><a href="#">Акции и скидки</a></li>
+						<li class="footer__li"><a href="#">Почему мы</a></li>
+						<li class="footer__li"><a href="#">Таблицы размеров</a></li>
+						<li class="footer__li"><a href="#">Возврат и обмен</a></li>
+						<li class="footer__li"><a href="#">О компании</a></li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<div class="footer__title">Важная информация</div>
+					<ul class="footer__ul">
+						<li class="footer__li"><a href="#">Полезная информация</a></li>
+						<li class="footer__li"><a href="#">Правила ухода</a></li>
+						<li class="footer__li"><a href="#">Условные обозначения на <br> спецодежде</a></li>
+						<li class="footer__li"><a href="#">Технологии и материалы</a></li>
+						<li class="footer__li"><a href="#">Политика конфиденциальности</a></li>
+						<li class="footer__li"><a href="#">Пользовательское соглашение</a></li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<div class="footer__title">Услуги</div>
+					<ul class="footer__ul">
+						<li class="footer__li"><a href="#">Печать логотипа на одежде</a></li>
+						<li class="footer__li"><a href="#">Выполнение спец заказов</a></li>
+						<li class="footer__li"><a href="#">Маркировка одежды</a></li>
+						<li class="footer__li"><a href="#">Изготовление медицинских масок с логотипом</a></li>
+						<li class="footer__li"><a href="#">Печать логотипа на ярлыках и бирках</a></li>
+						<li class="footer__li"><a href="#">Производство полиэтиленовых чехлов с резинкой</a></li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<div class="footer__top">
+						<div class="footer__left">
+							<a href="index.html" class="footer__img">
+								<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture>
+							</a>
+							<div class="footer__subtitle">Контакты</div>
+						</div>
+						<div class="footer__right">
+							<a href="#" class="footer__blue-btn blue-btn blue-btn--white">Написать директору</a>
+							<a href="#" class="footer__red-btn red-btn" data-popup="#callback">Обратный звонок</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p>
+							Москва, 3-й Нижнелихоборский проезд, 1А
+						</p>
+						<p>
+							<a href="tel:84951233895">8 (495) 123-38-95</a>
+							<a href="mailto:info@SpecOdezhdaTorg.ru" class="footer__mail">info@SpecOdezhdaTorg.ru</a>
+						</p>
+						<p>
+							«Одеждапроф» © 2015-2022
+						</p>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220524140208"></script>
+	<script src="js/app.min.js?_v=20220525215359"></script>
 </body>
 
 </html>
