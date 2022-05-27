@@ -2470,9 +2470,8 @@
                 }));
             }
         }), 0);
-        let menuLi = document.querySelectorAll(".side__main-li");
+        let menuLi = document.querySelectorAll(".side__arrow-link");
         let collapse = document.querySelector(".side-spoiler-link");
-        document.querySelector(".side__collapse");
         if (menuLi && isMobile.any()) menuLi.forEach((e => {
             e.addEventListener("click", (item => {
                 item.preventDefault();
