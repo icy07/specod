@@ -1477,7 +1477,7 @@ body::after {
     margin-bottom: 1.25rem;
   }
 }
-.text-main__wrapper:not(:last-child) {
+.text-main__class-wrapper:not(:last-child) {
   border-bottom: 1px solid #424255;
 }
 .text-main__class-title {
