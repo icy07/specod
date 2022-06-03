@@ -3500,6 +3500,41 @@ body::after {
   font-size: 1rem;
   line-height: 1.1875;
 }
+.tabs__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tabs__table tr td {
+  padding: 0.3125rem 0.625rem;
+  border: 1px solid #424255;
+}
+@media (min-width: 91.875em) {
+  .tabs__table tr td {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 91.875em) {
+  @supports (font-size: clamp( 0.875rem , 0.8402173913rem  +  0.1739130435vw , 1rem )) {
+    .tabs__table tr td {
+      font-size: clamp( 0.875rem , 0.8402173913rem  +  0.1739130435vw , 1rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.875rem , 0.8402173913rem  +  0.1739130435vw , 1rem )) {
+    .tabs__table tr td {
+      font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 71.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .tabs__table tr td {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 28.125em) {
+  .tabs__table tr td {
+    padding: 0.1875rem 0.5rem;
+  }
+}
 
 .options-color {
   display: grid;
