@@ -2039,6 +2039,7 @@ body::after {
   z-index: 3;
   padding: 0px 0.625rem;
   display: none;
+  width: 20.625rem;
   width: fit-content;
   position: absolute;
   left: 100%;
@@ -2048,6 +2049,7 @@ body::after {
 @media (max-width: 61.9375em) {
   .side__subul {
     position: static;
+    width: 100%;
   }
 }
 .side__subli > a {
